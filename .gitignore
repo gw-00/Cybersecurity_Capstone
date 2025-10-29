@@ -1,6 +1,7 @@
 # Folders
-/data
+Data/Raw
 
-# Files
-.env
+
+# File types
 .DS_Store
+.env
