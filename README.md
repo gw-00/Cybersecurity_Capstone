@@ -10,53 +10,43 @@ This repository documents an end-to-end machine learning workflow for detecting 
 
 CYBERSECURITY_CAPSTONE/
 │
-├── Code_Library/
-│   ├── Data_Preparation.ipynb
-│   │     Cleans CIC-IoT2023 flow data, standardizes column types, removes duplicates,
-│   │     and derives both multi-class (Attack_Family) and binary (Binary_Label) targets.
+├── Code_Library/                          # Jupyter notebooks for the full ML workflow
 │   │
-│   ├── Data_Exploration.ipynb
-│   │     Explores distributions, sparsity, skewness, zero inflation, multicollinearity,
-│   │     and overall feature redundancy to guide model development.
+│   ├── Data_Preparation.ipynb             # Cleans CIC-IoT2023 data, fixes schema, removes duplicates,
+│   │                                       # derives Attack_Family and Binary_Label targets
 │   │
-│   ├── Modeling.ipynb
-│   │     Trains and evaluates a suite of machine learning models including:
-│   │     LightGBM, Random Forest, CatBoost, AdaBoost, XGBoost,
-│   │     Logistic Regression, and Linear SVM.
-│   │     Uses a balanced training set while leaving validation and test sets imbalanced
-│   │     to reflect natural real-world attack distributions.
+│   ├── Data_Exploration.ipynb             # Distribution analysis, missingness, sparsity, skewness,
+│   │                                       # correlation structure, redundancy detection
 │   │
-│   └── Feature_Importance.ipynb
-│         Fits the best-performing LightGBM configuration and computes SHAP-based
-│         global feature importances for interpretability.
+│   ├── Modeling.ipynb                     # Trains LightGBM, Random Forest, CatBoost, AdaBoost,
+│   │                                       # XGBoost, Logistic Regression, Linear SVM using a
+│   │                                       # balanced training set and imbalanced validation/test splits
+│   │
+│   └── Feature_Importance.ipynb           # Computes SHAP global feature importance for the best model
 │
-├── Tables/
-│   ├── EDA/
-│   │     Contains summary statistics, missing-value audits, correlation matrices,
-│   │     redundancy cluster outputs, and other exploratory tables.
+├── Tables/                                # CSV output directory
 │   │
-│   └── Model_Results/
-│         Classification reports, ROC-AUC summaries, confusion matrices,
-│         aggregated evaluation metrics, and tuned model performance summaries.
+│   ├── EDA/                                # Summary statistics, missing-value checks,
+│   │                                       # correlation matrices, redundancy clusters
+│   │
+│   └── Model_Results/                      # Classification reports, ROC-AUC tables,
+│                                           # aggregated metrics, tuned model comparisons
 │
-├── Images/
-│   ├── EDA/
-│   │     Visual distributions, sparsity plots, correlation heatmaps,
-│   │     and dataset structural diagrams.
+├── Images/                                # EDA and model visualization outputs
 │   │
-│   ├── Model_Results/
-│   │     ROC curves, confusion matrices, SHAP plots, and feature analysis figures.
+│   ├── EDA/                                # Distribution plots, correlation heatmaps,
+│   │                                       # sparsity visuals, structural diagrams
 │   │
-│   ├── cic-topology-chart-2023.jpg
+│   ├── Model_Results/                      # ROC curves, confusion matrices, SHAP plots
+│   │
+│   ├── cic-topology-chart-2023.jpg         # IoT topology reference diagrams
 │   ├── cic-topology-diagram3-2023.jpg
 │   └── inline-network-topology.jpg
-│         Network topology visualizations used for contextualizing IoT attack flows.
 │
-├── requirements.txt
-│     Python dependency list for environment setup.
+├── requirements.txt                        # Python dependency list for environment setup
 │
-└── README.md
-      Project documentation file.
+└── README.md                               # Project documentation
+
 
 ---
 
