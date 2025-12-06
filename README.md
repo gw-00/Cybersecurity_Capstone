@@ -8,6 +8,8 @@ This repository documents an end-to-end machine learning workflow for detecting 
 
 ## Repository Structure
 
+```
+
 CYBERSECURITY_CAPSTONE/
 │
 ├── Code_Library/                          # Jupyter notebooks for the full ML workflow
@@ -47,6 +49,7 @@ CYBERSECURITY_CAPSTONE/
 │
 └── README.md                               # Project documentation
 
+```
 
 ---
 
