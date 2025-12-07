@@ -26,6 +26,12 @@ CYBERSECURITY_CAPSTONE/
 │   │
 │   └── Feature_Importance.ipynb           # Computes SHAP global feature importance for the best model
 │
+├── Data/                                  # Data storage directory (not included in repo b/c of file size)
+│   │
+│   ├── Raw/                               # Original CIC-IoT2023 flow export CSVs
+│   │
+│   └── Processed/                         # Cleaned Parquet datasets with standardized schema
+│
 ├── Tables/                                # CSV output directory
 │   │
 │   ├── EDA/                                # Summary statistics, missing-value checks,
