@@ -30,7 +30,7 @@ CYBERSECURITY_CAPSTONE/
 │   │
 │   ├── Raw/                               # Original CIC-IoT2023 flow export CSVs
 │   │
-│   └── Processed/                         # Cleaned Parquet datasets with standardized schema
+│   └── Cleaned/                         # Cleaned Parquet datasets with standardized schema
 │
 ├── Tables/                                # CSV output directory
 │   │
